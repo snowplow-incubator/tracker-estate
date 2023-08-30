@@ -9,9 +9,9 @@ The `all_properties` folder has files containing different tracker features or p
 
 The `tracker_details` folder has details for every tracker that match the features/properties in the table files.
 
-For example, `features.md` has the line `Flush events command`. The tracker files also have this (exact wording!) line, plus whether or not it's present in the tracker, in the form `Flush events command | y`. A line can be present in multiple table files in `all_properties`, e.g. `Session pausable` is part of the general Features table as well as the Session table.
+For example, `features.md` has the line `Flush events command`. The tracker files also have this (exact wording!) line, plus whether or not it's present in the tracker, in the form `Flush events command | yes`. A line can be present in multiple table files in `all_properties`, e.g. `Session pausable` is part of the general Features table as well as the Session table.
 
-Annotations are added after a pipe separator. For example, `Flush events command | to flush events`, or `Flush events command | n | some explanation`.
+Annotations are added after a pipe separator. For example, `Flush events command | to flush events`, or `Flush events command | no | some explanation`.
 
 A Ruby script reads all the files and generates the html.
 
