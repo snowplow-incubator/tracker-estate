@@ -211,7 +211,7 @@ class TrackerEstate
         "#{make_a_single_table(@important_file)}<br/>" \
         "</body></html>\n"
 
-    File.open('snowplow_tracker_estate.html', 'w') { |f| f.write(output) }
+    File.open('./html/index.html', 'w') { |f| f.write(output) }
   end
 
   def add_new_property_to_trackers(insert_after_this_text, new_text)
