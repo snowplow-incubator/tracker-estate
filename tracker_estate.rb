@@ -9,22 +9,22 @@ class TrackerEstate
       android
       ios
       react_native
-      flutter
+      golang
       python
-      ruby
-      php
       java
       cpp
-      roku
-      google_amp
-      golang
-      unity
       dotnet
-      lua
       scala
+      google_amp
+      pixel
+      flutter
+      ruby
+      php
+      roku
+      unity
+      lua
       rust
       web_view
-      pixel
     ]
 
     @tracker_names = {

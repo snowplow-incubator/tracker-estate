@@ -1,5 +1,5 @@
 # DEV GUIDES
-API docs | no
+API docs | n/a
 Good documentation | no
 Basic demo app | no
 Instrumentation apps ("realistic") | no
