@@ -13,7 +13,7 @@ Automated deploy to package manager | y
 Automated deploy to Github | n
 
 # EMITTER/NETWORK CONFIGURATION
-Implicit endpoint url (default POST and HTTPS) | n
+Implicit endpoint url (default POST and HTTPS) | n | GET or POST chosen based on batch size
 Custom POST path | n
 Custom connection timeout | n
 Custom request headers | n
