@@ -24,10 +24,10 @@ EventStore has maximum limit | no
 Events are buffered in memory or db | yes
 Custom EventStore | no
 Provide stop retry for HTTP error codes | no
-Custom threadpool size | 
-Request callback (event sending callback) | 
+Custom threadpool size | n
+Request callback (event sending callback) | n 
 Server anonymisation option | y
-Cookie jar | 
+Cookie jar | n
 
 # TRACKER CONFIGURATION
 Namespace mandatory | yes
