@@ -13,21 +13,21 @@ Automated deploy to package manager | yes
 Automated deploy to Github | 
 
 # EMITTER/NETWORK CONFIGURATION
-Implicit endpoint url (default POST and HTTPS) | yes
-Custom POST path | 
-Custom connection timeout | 
-Custom request headers | 
-Custom NetworkConnection/HttpClient | 
+Implicit endpoint url (default POST and HTTPS) | no | default GET
+Custom POST path | n
+Custom connection timeout | n
+Custom request headers | n
+Custom NetworkConnection/HttpClient | n
 Custom max payload size (to deprecate?!) | no
 Custom batch size | yes
 EventStore has maximum limit | no
 Events are buffered in memory or db | yes
 Custom EventStore | no
 Provide stop retry for HTTP error codes | no
-Custom threadpool size | 
-Request callback (event sending callback) | 
-Server anonymisation option | 
-Cookie jar | 
+Custom threadpool size | n
+Request callback (event sending callback) | y
+Server anonymisation option | n
+Cookie jar | y
 
 # TRACKER CONFIGURATION
 Namespace mandatory | yes
@@ -69,11 +69,11 @@ Set screen viewport | y
 Set colour depth | y
 Set domain sessionId | y
 Set domain sessionIndex | y
-Set user fingerprint | 
+Set user fingerprint | n
 
 # EVENT LOSS CALLBACKS
-Sending failure callback | 
-Drop events callback | 
+Sending failure callback | n
+Drop events callback | n
 
 # FEATURES
 Snowplow API | no
@@ -86,7 +86,7 @@ Sent_timestamp available | yes
 Track returns event_id | no
 Automatically track general atomic fields | yes
 Tracker pausable | n
-Emitter pausable | 
+Emitter pausable | n
 Flush events command | yes
 Flush at regular time intervals | no
 Start new session command| yes
@@ -158,5 +158,5 @@ Client/Server | server
 Version | 3.14.0
 Status | Actively Maintained
 Repository | https://github.com/snowplow/snowplow-javascript-tracker
-Documentation | https://docs.snowplowanalytics.com/docs/collecting-data/collecting-from-own-applications/node-js-tracker/
+Documentation | https://docs.snowplow.io/docs/collecting-data/collecting-from-own-applications/javascript-trackers/node-js-tracker/
 Supported platforms | servers
