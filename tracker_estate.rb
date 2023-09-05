@@ -63,6 +63,8 @@ class TrackerEstate
     @entities_file = 'all_properties/entities.md'
     @general_file = 'all_properties/general.md'
     @important_file = 'all_properties/important.md'
+
+    @github_link = '<a href="https://github.com/snowplow-incubator/tracker-estate">Github repo</a>'
   end
 
   def make_a_single_table(features_filename)
@@ -196,6 +198,7 @@ class TrackerEstate
               '<meta name="viewport" content="width=device-width, initial-scale=1.0" />' \
         '<title>Snowplow Tracker Estate</title><link rel="stylesheet" href="style.css"></head>' \
         '<body><h2>Snowplow Tracker Estate Overview</h2>' \
+        "#{@github_link}<br/><br/>" \
         "#{make_a_single_table(@general_file)}<br/>" \
         "#{make_a_single_table(@devrel_file)}<br/>" \
         "#{make_a_single_table(@tests_file)}<br/>" \
