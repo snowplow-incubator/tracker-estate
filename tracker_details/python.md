@@ -25,7 +25,7 @@ Events are buffered in memory or db | yes
 Custom EventStore | yes
 Provide stop retry for HTTP error codes | yes
 Custom threadpool size | y
-Request callback (event sending callback) | n
+Request callback (event sending callback) | yes
 Server anonymisation option | n
 Cookie jar | n
 
