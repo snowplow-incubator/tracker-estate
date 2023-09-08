@@ -3,7 +3,7 @@ API docs | yes
 Good documentation | no | but not awful
 Basic demo app | no
 Instrumentation apps ("realistic") | yes | very simple Rails app
-Release notes on Github | n
+Release notes on Github | yes
 
 # TESTS AND CI
 Automated unit tests | yes
