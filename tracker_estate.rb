@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+require 'Date'
 
 class TrackerEstate
   def initialize
@@ -199,6 +200,7 @@ class TrackerEstate
         '<title>Snowplow Tracker Estate</title><link rel="stylesheet" href="style.css"></head>' \
         '<body><h2>Snowplow Tracker Estate Overview</h2>' \
         "#{@github_link}<br/><br/>" \
+        "#{updated_today}<br/><br/>" \
         "#{make_a_single_table(@general_file)}<br/>" \
         "#{make_a_single_table(@devrel_file)}<br/>" \
         "#{make_a_single_table(@tests_file)}<br/>" \
@@ -215,6 +217,10 @@ class TrackerEstate
         "</body></html>\n"
 
     File.open('./html/index.html', 'w') { |f| f.write(output) }
+  end
+
+  def updated_today
+    "This page was updated on: #{Date.today.strftime('%d %B %Y')}."
   end
 
   def add_new_property_to_trackers(insert_after_this_text, new_text)
@@ -258,3 +264,4 @@ estate = TrackerEstate.new
 estate.output_html_file
 
 # estate.add_new_property_to_trackers("Set domain sessionIndex", "Set user fingerprint | ")
+
