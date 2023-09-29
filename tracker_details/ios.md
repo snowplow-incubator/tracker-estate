@@ -23,7 +23,7 @@ Custom batch size | yes
 EventStore has maximum limit | no
 Events are buffered in memory or db | yes
 Custom EventStore | yes
-Provide stop retry for HTTP error codes | no
+Provide stop retry for HTTP error codes | yes
 Custom threadpool size | y
 Request callback (event sending callback) | y
 Server anonymisation option | y
