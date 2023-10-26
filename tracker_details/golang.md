@@ -93,7 +93,7 @@ Start new session command | n/a
 Event index counter for session | no
 Timestamp on session | no
 Asynchronous event sending | yes
-Event sending retry | n
+Event sending retry | yes
 Plug-in architecture | no
 Events are different classes | n
 Events are different functions | y
